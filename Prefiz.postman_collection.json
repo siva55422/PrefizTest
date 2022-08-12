@@ -1,0 +1,112 @@
+{
+	"info": {
+		"_postman_id": "4c5dfb79-2a60-4e40-831c-a67abf82ebe3",
+		"name": "Prefiz",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18053673"
+	},
+	"item": [
+		{
+			"name": "salestax",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Sam",
+						"value": "true",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"book\": 12.49,\r\n    \"music CD\": 14.99,\r\n    \"chocolate bar\": 0.85\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/salestax",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"salestax"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "salestaximported",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Sam",
+						"value": "true",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"imported box of chocolates\": 10.00,\r\n    \"imported bottle of perfume\": 47.50\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/salestax",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"salestax"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "salestaximportedAndNonImport",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Sam",
+						"value": "true",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"imported box of chocolates\": 11.25,\r\n    \"imported bottle of perfume\": 27.99,\r\n    \"bottle of perfume\" : 18.99,\r\n    \"packet of headache pills\" : 9.75\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/salestax",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"salestax"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
